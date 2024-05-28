@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link,useNavigate } from "react-router-dom";
 import { Label, TextInput,Button, Alert, Spinner } from "flowbite-react";
+import OAuth from "../components/OAuth";
 export default function SignUp() {
   const [formData,setFormData]=useState({})
   const [errorMessage,setErrorMessage]=useState(null)
@@ -12,6 +13,7 @@ export default function SignUp() {
 
 const handleSubmit=async(e)=>{
   e.preventDefault();
+  e.stopImmediatePropagation()
   if(!formData.username || !formData.email || !formData.password){
     return setErrorMessage('Please fill out all fields')
   }
@@ -96,6 +98,7 @@ const handleSubmit=async(e)=>{
         ):('Sign Up')
        }
 </Button>
+<OAuth/>
 
           </form>
           <div className="flex gap-2 text-sm mt-5">
