@@ -38,10 +38,12 @@ export default function Header() {
             <Dropdown
             arrowIcon={false}
             inlinelabel={
+                
                 <Avatar
                 alt='user'
-                img={currentUser.profilePicture}
-                // img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfRBwEU4J4LYyCrSdhgF3Ypk8dc652vD1iBA&s'
+                // img={currentUser.profilePicture}
+                img ={currentUser.profilePicture} 
+                // img={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfRBwEU4J4LYyCrSdhgF3Ypk8dc652vD1iBA&s'}
                 rounded
                 />
             }>
