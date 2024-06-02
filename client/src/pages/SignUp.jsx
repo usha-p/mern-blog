@@ -13,7 +13,7 @@ export default function SignUp() {
 
 const handleSubmit=async(e)=>{
   e.preventDefault();
-  e.stopImmediatePropagation()
+  // e.stopImmediatePropagation()
   if(!formData.username || !formData.email || !formData.password){
     return setErrorMessage('Please fill out all fields')
   }
