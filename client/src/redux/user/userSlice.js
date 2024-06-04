@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { updateMetadata } from "firebase/storage";
 
 
 const initialState={
@@ -23,7 +24,22 @@ const userSlice=createSlice({
             state.loading=false;
             state.error=action.payload;
         },
+        updateStart:(state,action)=>{
+            // state.currentUser=action.payload;
+            state.loading=false;
+            state.error=null;
+        },
+        updateSuccess:(state,action)=>{
+            state.currentUser=action.payload;
+            state.loading=false;
+            state.error=null;
+        },
+        updateFailure:(state,action)=>{
+          
+            state.loading=false;
+            state.error=action.payload;
+        }
     }
 })
-export const {signInStart,signInSuccess,signInFailure} =userSlice.actions
+export const {signInStart,signInSuccess,signInFailure,updateStart,updateSuccess,updateFailure} =userSlice.actions
 export default userSlice.reducer;

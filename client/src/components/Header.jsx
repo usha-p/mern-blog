@@ -37,13 +37,14 @@ export default function Header() {
         {currentUser?(
             <Dropdown
             arrowIcon={false}
-            inlinelabel={
+            inline
+            label={
                 
                 <Avatar
                 alt='user'
-                // img={currentUser.profilePicture}
+        
                 img ={currentUser.profilePicture} 
-                // img={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfRBwEU4J4LYyCrSdhgF3Ypk8dc652vD1iBA&s'}
+               
                 rounded
                 />
             }>
