@@ -19,7 +19,11 @@ const userSchema=new mongoose.Schema({
         profilePicture:{
             type:String,
             default:"https://tse1.mm.bing.net/th?id=OIP.a9qb_VLfFjvlrDfc-iNLpgAAAA&pid=Api&P=0&h=180",
-        }
+        },
+        isAdmin:{
+            type:Boolean,
+            default:false
+        },
     
 },{timestamps:true})
 const User=mongoose.model('User',userSchema);
