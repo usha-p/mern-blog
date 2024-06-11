@@ -26,30 +26,30 @@ export default function Comment({ comment, onLike, onEdit, onDelete }) {
     getUser();
   }, [comment]);
 
-//   const handleEdit = () => {
-//     setIsEditing(true);
-//     setEditedContent(comment.content);
-//   };
+  // const handleEdit = () => {
+  //   setIsEditing(true);
+  //   setEditedContent(comment.content);
+  // };
 
-//   const handleSave = async () => {
-//     try {
-//       const res = await fetch(`/api/comment/editComment/${comment._id}`, {
-//         method: 'PUT',
-//         headers: {
-//           'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify({
-//           content: editedContent,
-//         }),
-//       });
-//       if (res.ok) {
-//         setIsEditing(false);
-//         onEdit(comment, editedContent);
-//       }
-//     } catch (error) {
-//       console.log(error.message);
-//     }
-//   };
+  // const handleSave = async () => {
+  //   try {
+  //     const res = await fetch(`/api/comment/editComment/${comment._id}`, {
+  //       method: 'PUT',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({
+  //         content: editedContent,
+  //       }),
+  //     });
+  //     if (res.ok) {
+  //       setIsEditing(false);
+  //       onEdit(comment, editedContent);
+  //     }
+  //   } catch (error) {
+  //     console.log(error.message);
+  //   }
+  // };
   return (
     <div className='flex p-4 border-b dark:border-gray-600 text-sm'>
       <div className='flex-shrink-0 mr-3'>
@@ -69,7 +69,7 @@ export default function Comment({ comment, onLike, onEdit, onDelete }) {
           </span>
         </div>
         <p className='text-gray-500 pb-2'>{comment.content}</p>
-        {/* {isEditing ? (
+        {isEditing ? (
           <>
             <Textarea
               className='mb-2'
@@ -117,7 +117,7 @@ export default function Comment({ comment, onLike, onEdit, onDelete }) {
                     ' ' +
                     (comment.numberOfLikes === 1 ? 'like' : 'likes')}
               </p>
-              {currentUser &&
+              {/* {currentUser &&
                 (currentUser._id === comment.userId || currentUser.isAdmin) && (
                   <>
                     <button
@@ -135,10 +135,10 @@ export default function Comment({ comment, onLike, onEdit, onDelete }) {
                       Delete
                     </button>
                   </>
-                )}
+                )} */}
             </div>
           </>
-        )} */}
+        )}
       </div>
     </div>
   );
