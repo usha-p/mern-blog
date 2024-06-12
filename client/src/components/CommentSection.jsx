@@ -93,24 +93,24 @@ export default function CommentSection({ postId }) {
     );
   };
 
-  // const handleDelete = async (commentId) => {
-  //   setShowModal(false);
-  //   try {
-  //     if (!currentUser) {
-  //       navigate('/sign-in');
-  //       return;
-  //     }
-  //     const res = await fetch(`/api/comment/deleteComment/${commentId}`, {
-  //       method: 'DELETE',
-  //     });
-  //     if (res.ok) {
-  //       const data = await res.json();
-  //       setComments(comments.filter((comment) => comment._id !== commentId));
-  //     }
-  //   } catch (error) {
-  //     console.log(error.message);
-  //   }
-  // };
+  const handleDelete = async (commentId) => {
+    setShowModal(false);
+    try {
+      if (!currentUser) {
+        navigate('/sign-in');
+        return;
+      }
+      const res = await fetch(`/api/comment/deleteComment/${commentId}`, {
+        method: 'DELETE',
+      });
+      if (res.ok) {
+        const data = await res.json();
+        setComments(comments.filter((comment) => comment._id !== commentId));
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
   return (
     <div className='max-w-2xl mx-auto w-full p-3'>
       {currentUser ? (
