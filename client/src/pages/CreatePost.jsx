@@ -96,9 +96,9 @@ const navigate=useNavigate()
             </Select>
 
         </div>
-        <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
+        <div className='flex gap-4 items-center justify-between border-4 border-rose-400-500 border-dotted p-3'>
             <FileInput type='file' accept='image/.*' onChange={(e)=>setFile(e.target.files[0])}/>
-            <Button type='button' gradientDuoTone='purpleToBlue' size='sm' outline onClick={handleUploadImage} disabled={imageUploadProgress}>
+            <Button type='button' className='bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2' size='sm' outline onClick={handleUploadImage} disabled={imageUploadProgress}>
                 {imageUploadProgress ?(
             <div className='w-16 h-16'>
                 <CircularProgressbar value={imageUploadProgress} text={`${imageUploadProgress || 0}%`} />
@@ -122,7 +122,7 @@ const navigate=useNavigate()
         <ReactQuill theme='snow' placeholder='Write something...' className='h-72 mb-12' required onChange={(value)=>{
             setFormData({...formData,content:value})
         }}/ >
-<Button type='submit' gradientDuoTone='purpleToPink'>Publish</Button>            
+<Button type='submit' className='bg-gradient-to-r from-pink-400 to-orange-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'>Publish</Button>            
 {
     publishError && <Alert color='failure' className='mt-5'>{publishError}</Alert>
 }

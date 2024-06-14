@@ -124,7 +124,7 @@ setUserIdToDelete(user._id)
           </Table>
           {
             showMore &&(
-              <button  onClick={handleShowMore} className='w-full text-teal-500 self-center text-sm  py-7'>Show more</button>
+              <button  onClick={handleShowMore} className='w-full text-rose-400 self-center text-sm  py-7'>Show more</button>
             )
           }</>
          

@@ -189,13 +189,13 @@ dispatch(signOutSuccess())
    <TextInput type='text' id='username' placeholder='username' defaultValue={currentUser.username} onChange={handleChange}/>
    <TextInput type='email' id='email' placeholder='email' defaultValue={currentUser.email} onChange={handleChange}/>
    <TextInput type='password' id='password' placeholder='password' onChange={handleChange} />
-   <Button type='submit' gradientDuoTone='purpleToBlue' outline disabled={loading || imageFileUploading}>
+   <Button type='submit' className='bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 text-black-300' outline disabled={loading || imageFileUploading}>
 {loading?'Loading...' :'Update'}
    </Button>
    {
     currentUser.isAdmin && (
         <Link to={'/create-post'}>
-         <Button type='button' gradientDuoTone='purpleToPink' className='w-full'>
+         <Button type='button'  className='w-full bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 text-white'>
             Create a post
         </Button></Link>
    

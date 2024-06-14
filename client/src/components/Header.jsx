@@ -29,10 +29,11 @@ dispatch(signOutSuccess())
             console.log(error.message)
         }
     }
+    //bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white
   return (
     <Navbar className='border-b-2'>
 <Link to="/" className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
-    <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>Usha's</span>
+    <span className=' bg-gradient-to-r from-pink-400 via-orange-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-l px-5 py-2.5 text-center me-2 mb-2 text-white'>Usha's</span>
     Blog
     </Link>
     <form >
@@ -84,7 +85,7 @@ dispatch(signOutSuccess())
         ):
         (
             <Link to='/sign-in'>
-            <Button gradientDuoTone='purpleToBlue' outline>
+            <Button className='bg-gradient-to-r from-pink-400 via-orange-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 rounded' outline>
                 Sign In
             </Button>
         </Link>

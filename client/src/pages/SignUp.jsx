@@ -50,7 +50,7 @@ const handleSubmit=async(e)=>{
             to="/"
             className=" font-bold dark:text-white  text-4xl"
           >
-            <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
+            <span className="rounded px-2 py-1 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400  me-2 mb-2 text-white">
               Usha's
             </span>
             Blog
@@ -87,7 +87,7 @@ const handleSubmit=async(e)=>{
               onChange={handleChange}
               />
             </div>
-            <Button gradientDuoTone='purpleToPink' type='submit' disabled={loading}>
+            <Button className="bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 text-black-300" type='submit' disabled={loading}>
        {
         loading?(
           <>
