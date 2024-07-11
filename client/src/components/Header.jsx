@@ -53,7 +53,7 @@ dispatch(signOutSuccess())
   return (
     <Navbar className='border-b-2'>
 <Link to="/" className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
-    <span className=' bg-gradient-to-r from-pink-400 via-orange-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-l px-5 py-2.5 text-center me-2 mb-2 text-white'>Usha's</span>
+    <span className=' bg-gradient-to-r from-pink-400 via-orange-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-l px-5 py-2.5 text-center me-2 mb-2 text-white'>The Open Quill's</span>
     Blog
     </Link>
     <form onSubmit={handleSubmit}>
@@ -117,15 +117,15 @@ dispatch(signOutSuccess())
     </div>
     <Navbar.Collapse>
             <Navbar.Link active={path==='/'} as={'div'}>
-                <Link to="/">Home</Link>
+                <Link to="/" className='text-black hover:text-rose-400'>Home</Link>
 
             </Navbar.Link>
             <Navbar.Link active={path==="/about"} as={'div'}>
-                <Link to="/about">About</Link>
+                <Link to="/about" className='text-black hover:text-rose-400'>About</Link>
                 
             </Navbar.Link>
             <Navbar.Link active={path==='/projects'} as={'div'}> 
-                <Link to="/projects">Projects</Link>
+                <Link to="/projects" className='text-black hover:text-rose-400'>Projects</Link>
                 
             </Navbar.Link>
         </Navbar.Collapse>

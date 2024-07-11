@@ -130,10 +130,15 @@ console.log(sidebarData)
               value={sidebarData.category}
               id='category'
             >
-              <option value='uncategorized'>Uncategorized</option>
-              <option value='reactjs'>React.js</option>
-              <option value='nextjs'>Next.js</option>
-              <option value='javascript'>JavaScript</option>
+              <option value='select category'>Choose category</option>
+             
+              <option value='reactjs'>Technology</option>
+                <option value='nextjs'>Fashion</option>
+                <option value='express'>Food</option>
+                <option value='express'>Food</option>
+                <option value='express'>computer Science</option>
+                <option value='express'>Artifical Intelligence</option>
+                <option value='uncategorized'>Uncategorized</option>
             </Select>
           </div>
           <Button type='submit' outline className="bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus: focus:outline-none  dark:focus:ring-red-400   text-white rounded">

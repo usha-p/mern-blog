@@ -90,9 +90,12 @@ const navigate=useNavigate()
             <TextInput type='text' placeholder='Title' required id='title' className='flex-1' onChange={(e)=>setFormData({...formData,title:e.target.value})}/>
             <Select onChange={(e)=>setFormData({...formData,category:e.target.value})}>
                 <option value='uncategorized'>Select a category</option>
-                <option value='reactjs'>React.js</option>
-                <option value='nextjs'>Next.js</option>
-                <option value='express'>express</option>
+                <option value='reactjs'>Technology</option>
+                <option value='nextjs'>Fashion</option>
+                <option value='express'>Food</option>
+                <option value='express'>Food</option>
+                <option value='express'>computer Science</option>
+                <option value='express'>Artifical Intelligence</option>
             </Select>
 
         </div>

@@ -17,7 +17,7 @@ export default function CallToAction() {
             </Button>
         </div>
         <div className="p-7 flex-1">
-            <img src="https://fthmb.tqn.com/_P_IpRezcdFY2uZZNjKtLpyj2zA=/1500x1000/filters:fill(auto,1)/JavaScript-58acbb8a3df78c345bad32c2.jpg" />
+            <img src="https://lh6.googleusercontent.com/PoRa_gjGJlpO1AJF4PYVNV9GpC8gGQnQBoYm5ZGP_7gSIfo90OIoz_oU22IpkLPZPGuFycDzuhszoMIEkoGvDFqOvMB1mO_fnEwLrsvLZ3LAooI-DCNFgICgv1q4TipKSRgqDMQ" />
         </div>
     </div>
   )
